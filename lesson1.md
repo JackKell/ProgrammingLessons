@@ -77,7 +77,7 @@ Now there are several other data types that I have omitted here as other data ty
 ## Operators
 
 ### Basic Arithmetic Operators
-Python (like almost all programming languages) have most of the basic mathematical operators built into the language.  For example:
+Python, like almost all programming languages, have most of the basic mathematical operators built into the language.  For example:
 
 #### Addition:
 ```python
@@ -98,6 +98,12 @@ Python (like almost all programming languages) have most of the basic mathematic
 ```python
 >>> 5 / 5
 1.0
+```
+
+#### Exponents
+```python
+>>> 5 ** 2
+25
 ```
 
 ### Logical Operators
@@ -206,14 +212,49 @@ False
 In simple terms a variable is named location in a computer's memory that holds a value. 
 
 ### Creating a Variable
-A variable can be created by doing the following:
+A variable can be created by doing something like the following example:
 ```python
 >>> foo = 5
 ```
-Where, "foo" is the name of the variable and "5" is the value (or the data) that the variable holds. 
+Where, "foo" is the name of the variable and "5" is the value (or the data) that the variable holds.
+
+### Using Variables
+After a variable has been created (or instantiated to use those *programmery* terms again) it can be 
+ 
+### Assignment Operators
+Assignment operators allow one to set or change the value of a variable. 
+ 
+#### Equals (=)
+The equal sign is used to set the value of a variable equal to whatever is return on the right side of the equals sign (As seen in the section, "Creating a Variable"). This is an operator that is used often in most programming languages so it is important to become comfortable with its use. The following are all examples of how to use the **=** operator.
+```python
+>>> a = 5
+>>> b = 2 + 3
+>>> c = "234"
+>>> d = False
+```
+
+#### Add Equals (+=)
+```python
+
+```
+
+#### Subtract Equals (-=)
+```python
+```
+
+#### Multiply Equals (*=)
+```python
+```
+
+#### Divide Equals (/=)
+```python
+```
 
 ### Naming Variables
-The name of a variable can be anything as long as it does not contain special characters (such as &, $, %, +, etc.), contain no spaces, or start with a number.
+The name of a variable can be anything as long as it: 
+- does **not** contain special characters (such as &, $, %, +, etc.),
+- contains **no** spaces,
+- or **starts** with a **number**.
 
 #### Invalid Name Examples
 For example all of the following variable names below are not permitted:
@@ -234,17 +275,20 @@ SyntaxError: invalid syntax
 ```python
 >>> foo1 = 10
 >>> bar = 10
-SyntaxError: can't assign to operator
->>> foo\ = 10
-SyntaxError: unexpected character after line continuation character
->>> $foo = 10
-SyntaxError: invalid syntax
+>>> aNewVariable = 123
 ```
 
 #### Best Practices
-
-
-### Assignment Operators
-#### Equal (=)
+1. In Python it is normally good practice to name variables using [camel case](https://en.wikipedia.org/wiki/Camel_case) where the beginning of each word (expect for the first word) is capitalized.
 ```python
+thisIsCamelCase
+thisisnotcamelcase
+```
+2. Additionally, When naming variables it is important to make sure that the variable's names makes sense as to what kind of information the variable is holding. A general rule of thumb is when a variable is holding a certain data type the name of that variable should invoke the idea of that data type.</br>For example, if one wanted to store the number of apples that a person had what should the variable be called? As a programmer, is it totally your decision what to call the variable and there are no wrong answers (but some answers are often more right than others). Some good names for this variable could be, "totalApples" or "numberOfApples" or something to that effect. These names to single to other developers (and yourself later) that this variable is in fact holding a number.
+
+##### Good Variable Name Examples:
+ ```python
+ >>> numberOfDogs = 2
+ >>> isRunning = True
+ >>> playerName = "Jimmy"
 ```
