@@ -1,4 +1,4 @@
-# Lesson 3 - Functions and Dictionary
+# Lesson 3 - Functions
 
 ## Overview
 
@@ -64,6 +64,12 @@ def main():
     print(solveTriangle(3, 4))
     print(getBanana())
 ```
+
+#### Best Practices
+Functions should:
+- be small, 1 to 20 ish lines
+- only do one thing
+- named like verbs or actions
 
 ### Dictionary
 
