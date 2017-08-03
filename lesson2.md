@@ -16,7 +16,7 @@ To create a `list` from scratch simply:
 ```
 
 Note that lists can contain any data type `integers`, `floats`, `strings`, and even `lists`. Additionally, Python 
-provides a unique feature where lists do no need even need to be comprised of the same data type. 
+provides a unique feature where lists don't have to be comprised of the same data type. 
 
 ```python
 aListOfABunchOfStuff = ["Cat", 42, 1.743532, [1, 2, 3]]
